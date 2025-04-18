@@ -11,20 +11,34 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   margin: 0;
   padding: 20px;
+  padding-top: 200px;
 }
 
 .container {
+  position: relative;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
   text-align: center;
-  max-width: 100%;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: inset 0 0 30px #b2b2b2;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url(images/chuck.png) no-repeat center/contain;
+  width: 200px;
+  height: 180px;
 }
 
 h3 {
